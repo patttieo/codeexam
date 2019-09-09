@@ -1,0 +1,38 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+
+.page-container {
+    max-width:980px;
+    margin:0 auto;
+    width: 90%;
+}
+.page-container:before, .page-container:after {
+    content: " ";
+    display: table; 
+}
+.page-container:after {
+    clear: both; 
+}
+@media (min-width: 768px) {
+    .page-container {
+        width: 750px; 
+    } 
+}
+@media (min-width: 992px) {
+    .page-container {
+        width: 970px; 
+    }
+}
+@media (min-width: 1200px) {
+    .page-container {
+        width:980px;
+    }
+}
